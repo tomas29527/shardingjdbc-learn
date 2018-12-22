@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sharding-jdbc-learn
+
+
+shard:
+  jdbc:
+    druid:
+      url: jdbc:mysql://localhost:3306/db1?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: '123456'
+
+# LOGGING
+server:
+  port: 28033
+  servlet:
+    context-path: /sharding
+# 日志
+logging:
+    config: classpath:logback.xml
+
